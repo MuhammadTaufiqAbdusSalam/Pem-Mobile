@@ -1,4 +1,4 @@
-import 'package:tugas_pertemuan_3/tugas_pertemuan_3.dart' as tugas_pertemuan_3;
+// import 'package:tugas_pertemuan_3/tugas_pertemuan_3.dart' as tugas_pertemuan_3;
 
 void main(List<String> arguments) {
   /*String test = "test2";
@@ -38,6 +38,31 @@ void main(List<String> arguments) {
     }
     print(index);
   }*/
+  String namaLengkap = "Muhamamd Taufiq Abdus Salam";
+  String NIM = "2241760040";
+
+  for (int i = 0; i <= 201; i++) {
+    if (isPrima(i)) {
+      print("Bilangan prima: $i");
+      print("Nama: $namaLengkap");
+      print("NIM: $NIM");
+      print("");
+    }
+  }
 }
+bool isPrima(int number) {
+  if (number <= 1) {
+    return false;
+  }
+
+  for (int i = 2; i * i <= number; i++) {
+    if (number % i == 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
 
 
